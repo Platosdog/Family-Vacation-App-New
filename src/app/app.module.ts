@@ -13,7 +13,6 @@ import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatNativeDateModule} from '@angular/material/core';
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +23,8 @@ import {MatNativeDateModule} from '@angular/material/core';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule, MatToolbarModule, MatButtonModule, MatIconModule,
-    MatMenuModule, MatDatepickerModule, MatFormFieldModule, MatInputModule, MatDatepickerModule, MatNativeDateModule
+    MatMenuModule, MatDatepickerModule, MatFormFieldModule, MatInputModule,
+    MatDatepickerModule, MatNativeDateModule
   ],
   providers: [],
   bootstrap: [AppComponent]
