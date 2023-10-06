@@ -8,6 +8,7 @@
   transform: translate(-50%, -50%);
   padding: 10px;
   background-color:rgb(102, 73, 250);
+  border-radius: 15px;
 }
 .textarea {
   display: flex;
