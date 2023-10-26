@@ -1,24 +1,30 @@
+<div *ngFor="let day of days; index as i">
+  <h2>Day {{ i + 1 }}</h2>
 
-<div class="planner">
-  <div class="textarea">
-<mat-form-field>
-  <mat-label>Who is in charge?</mat-label>
-  <input matInput>
-</mat-form-field>
-<mat-form-field>
-  <mat-label>Meal</mat-label>
-  <mat-select>
-    <mat-option value="one">Breakfast</mat-option>
-    <mat-option value="two">Lunch</mat-option>
-    <mat-option value="test">Appetizer</mat-option>
-    <mat-option value="three">Dinner</mat-option>
-    <mat-option value="four">Snacks</mat-option>
-  </mat-select>
-</mat-form-field>
-<mat-form-field>
-  <mat-label>More Information Here</mat-label>
-  <textarea matInput></textarea>
-</mat-form-field>
-<button mat-raised-button color="accent">Save</button>
-</div>
-</div>
+  <div class="planner">
+    <div class="textarea">
+  <mat-form-field>
+    <mat-label>Who is in charge?</mat-label>
+    <input matInput>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Meal</mat-label>
+    <mat-select>
+      <mat-option value="one">Breakfast</mat-option>
+      <mat-option value="two">Lunch</mat-option>
+      <mat-option value="test">Appetizer</mat-option>
+      <mat-option value="three">Dinner</mat-option>
+      <mat-option value="four">Snacks</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>More Information Here</mat-label>
+    <textarea matInput></textarea>
+  </mat-form-field>
+  <button mat-raised-button color="accent">Save</button>
+  </div>
+  </div>
+
+ </div>
+
+
