@@ -4,6 +4,6 @@
     <select id="days" [ngModel]="selectedDays">
        <option *ngFor="let day of days" [value]="day">{{ day }}</option>
     </select>
-    <button type="submit" class="primary">Submit</button>
+    <button type="submit" class="primary" (click)="days">Submit</button>
    </div>
 </div>
