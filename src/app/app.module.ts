@@ -15,12 +15,14 @@ import {MatNativeDateModule} from '@angular/material/core';
 import { PlannerComponent } from './planner/planner.component';
 import {MatSelectModule} from '@angular/material/select';
 import { FormsModule } from '@angular/forms';
+import { LoginComponent } from './account/login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DatesComponent,
     PlannerComponent,
+    LoginComponent,
 
   ],
   imports: [
