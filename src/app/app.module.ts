@@ -16,6 +16,7 @@ import { PlannerComponent } from './planner/planner.component';
 import {MatSelectModule} from '@angular/material/select';
 import { FormsModule } from '@angular/forms';
 import { LoginComponent } from './account/login/login.component';
+import { SigninMicrosoftComponent } from './account/signin-microsoft/signin-microsoft.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { LoginComponent } from './account/login/login.component';
     DatesComponent,
     PlannerComponent,
     LoginComponent,
+    SigninMicrosoftComponent,
 
   ],
   imports: [

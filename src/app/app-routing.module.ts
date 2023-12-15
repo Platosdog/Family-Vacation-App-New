@@ -4,12 +4,14 @@ import { DatesComponent } from './dates/dates.component';
 import { PlannerComponent } from './planner/planner.component';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './account/login/login.component';
+import { SigninMicrosoftComponent } from './account/signin-microsoft/signin-microsoft.component';
 
 const routes: Routes = [
  // { path: '', component: },
   { path: 'dates', component: DatesComponent},
   { path: 'planner', component: PlannerComponent},
-  { path: 'login', component: LoginComponent}
+  { path: 'login', component: LoginComponent},
+  { path: 'signin', component: SigninMicrosoftComponent}
 ];
 
 @NgModule({
