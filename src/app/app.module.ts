@@ -17,6 +17,7 @@ import {MatSelectModule} from '@angular/material/select';
 import { FormsModule } from '@angular/forms';
 import { LoginComponent } from './account/login/login.component';
 import { SigninMicrosoftComponent } from './account/signin-microsoft/signin-microsoft.component';
+import { SigninGoogleComponent } from './account/signin-google/signin-google.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { SigninMicrosoftComponent } from './account/signin-microsoft/signin-micr
     PlannerComponent,
     LoginComponent,
     SigninMicrosoftComponent,
+    SigninGoogleComponent,
 
   ],
   imports: [
