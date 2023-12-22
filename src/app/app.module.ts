@@ -18,6 +18,7 @@ import { FormsModule } from '@angular/forms';
 import { LoginComponent } from './account/login/login.component';
 import { SigninMicrosoftComponent } from './account/signin-microsoft/signin-microsoft.component';
 import { SigninGoogleComponent } from './account/signin-google/signin-google.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { SigninGoogleComponent } from './account/signin-google/signin-google.com
     LoginComponent,
     SigninMicrosoftComponent,
     SigninGoogleComponent,
+    PageNotFoundComponent,
 
   ],
   imports: [
