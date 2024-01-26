@@ -9,7 +9,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { PlanComponent } from './plan/plan.component';
 
 const routes: Routes = [
-  { path: '', component: AppComponent},
+  { path: '', redirectTo: "dates", pathMatch: 'full'},
   { path: 'dates', component: DatesComponent},
   { path: 'planner', component: PlannerComponent},
   { path: 'login', component: LoginComponent},
