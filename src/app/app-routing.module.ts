@@ -8,11 +8,12 @@ import { SigninMicrosoftComponent } from './account/signin-microsoft/signin-micr
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const routes: Routes = [
-  //{ path: '**', component: PageNotFoundComponent },
+  { path: '', component: AppComponent},
   { path: 'dates', component: DatesComponent},
   { path: 'planner', component: PlannerComponent},
   { path: 'login', component: LoginComponent},
-  { path: 'signin', component: SigninMicrosoftComponent}
+  { path: 'signin', component: SigninMicrosoftComponent},
+  { path: '**', pathMatch: 'full', component: PageNotFoundComponent }
 ];
 
 @NgModule({
