@@ -9,7 +9,7 @@ export class DatesComponent implements OnInit {
 submitApplication() {
 throw new Error('Method not implemented.');
 }
-  days = [1, 2, 3, 4, 5, 6, 7];
+  days = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
   selectedDays = 1;
 
   @Output() selectedDaysChange: EventEmitter<number> = new EventEmitter<number>();

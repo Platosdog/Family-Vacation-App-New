@@ -19,6 +19,7 @@ import { LoginComponent } from './account/login/login.component';
 import { SigninMicrosoftComponent } from './account/signin-microsoft/signin-microsoft.component';
 import { SigninGoogleComponent } from './account/signin-google/signin-google.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { PlanComponent } from './plan/plan.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     SigninMicrosoftComponent,
     SigninGoogleComponent,
     PageNotFoundComponent,
+    PlanComponent,
 
   ],
   imports: [
