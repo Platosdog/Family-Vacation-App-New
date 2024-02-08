@@ -1,4 +1,4 @@
-.planner {
+.textarea {
   display: flex;
   justify-content: center;
   border: 5px solid;
@@ -9,9 +9,6 @@
   padding: 10px;
   background-color:rgb(102, 73, 250);
   border-radius: 15px;
-}
-.textarea {
-  display: flex;
   flex-direction: column;
   align-items: flex-start;
 }

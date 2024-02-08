@@ -1,9 +1,9 @@
 <div class="datepicker">
   <div>
-    <label for="days">Select number of days:</label>
-    <select id="days" [ngModel]="selectedDays">
-       <option *ngFor="let day of days" [value]="day">{{ day }}</option>
-    </select>
-    <button routerLink="/planner">Submit</button>
+    <button mat-button [matMenuTriggerFor]="menu">Welcome!</button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item routerLink="planner">New Vacation</button>
+      <button mat-menu-item routerLink="plan">Existing Vacation</button>
+    </mat-menu>
    </div>
 </div>
