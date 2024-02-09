@@ -20,6 +20,7 @@ import { SigninMicrosoftComponent } from './account/signin-microsoft/signin-micr
 import { SigninGoogleComponent } from './account/signin-google/signin-google.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { PlanComponent } from './plan/plan.component';
+import {MatListModule} from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,7 @@ import { PlanComponent } from './plan/plan.component';
     SigninMicrosoftComponent,
     SigninGoogleComponent,
     PageNotFoundComponent,
-    PlanComponent,
+    PlanComponent
 
   ],
   imports: [
@@ -38,7 +39,8 @@ import { PlanComponent } from './plan/plan.component';
     AppRoutingModule,
     BrowserAnimationsModule, MatToolbarModule, MatButtonModule, MatIconModule,
     MatMenuModule, MatDatepickerModule, MatFormFieldModule, MatInputModule,
-    MatDatepickerModule, MatNativeDateModule, MatSelectModule, FormsModule
+    MatDatepickerModule, MatNativeDateModule, MatSelectModule, FormsModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
