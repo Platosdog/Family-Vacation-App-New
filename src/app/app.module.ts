@@ -21,6 +21,7 @@ import { SigninGoogleComponent } from './account/signin-google/signin-google.com
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { PlanComponent } from './plan/plan.component';
 import {MatListModule} from '@angular/material/list';
+import { MatTableModule } from '@angular/material/table';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,7 @@ import {MatListModule} from '@angular/material/list';
     BrowserAnimationsModule, MatToolbarModule, MatButtonModule, MatIconModule,
     MatMenuModule, MatDatepickerModule, MatFormFieldModule, MatInputModule,
     MatDatepickerModule, MatNativeDateModule, MatSelectModule, FormsModule,
-    MatListModule
+    MatListModule, MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

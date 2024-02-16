@@ -1,5 +1,4 @@
 import {Component} from '@angular/core';
-import {MatListModule} from '@angular/material/list';
 
 export interface PeriodicElement {
   name: string;
@@ -26,7 +25,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
   templateUrl: './plan.component.html',
   styleUrls: ['./plan.component.css'],
 })
-export class TableBasicExample {
+export class PlanComponent {
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
   dataSource = ELEMENT_DATA;
 }
