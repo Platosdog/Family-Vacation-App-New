@@ -1,4 +1,10 @@
-  <div class="textarea">
+<form #plan="ngForm">
+ <div class="textarea">
+  <mat-form-field>
+    <mat-label>Day</mat-label>
+    <input matInput
+      [(ngModel)]="element.day" name="day" #name="ngModel">
+  </mat-form-field>
   <mat-form-field>
     <mat-label>Who is in charge?</mat-label>
     <input matInput>
@@ -20,4 +26,4 @@
   <button mat-raised-button color="accent">Save and New</button>
   <button mat-raised-button color="accent" routerLink="/plan">Save</button>
   </div>
-
+</form>
