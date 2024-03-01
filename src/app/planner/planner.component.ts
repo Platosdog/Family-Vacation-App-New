@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-planner',
@@ -6,7 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./planner.component.css']
 })
 
-export class PlannerComponent {
-element.day: any
+export class PlannerComponent implements OnInit {
+  myForm!: FormGroup;
+
+  ngOnInit(): void {
+    this.myForm = new FormGroup({
+      day: new FormControl('')
+    })
+    throw new Error('Method not implemented.');
+  }
 
 }
