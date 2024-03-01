@@ -1,29 +1,28 @@
-<form #plan="ngForm">
+<form [formGroup]="detailForm" novalidate>
  <div class="textarea">
   <mat-form-field>
     <mat-label>Day</mat-label>
-    <input matInput
-      [(ngModel)]="element.day" name="day" #name="ngModel">
+    <input matInput formControlName="day">
   </mat-form-field>
   <mat-form-field>
     <mat-label>Who is in charge?</mat-label>
-    <input matInput>
+    <input matInput formControlName="name">
   </mat-form-field>
   <mat-form-field>
     <mat-label>Meal</mat-label>
-    <mat-select>
-      <mat-option value="one">Breakfast</mat-option>
-      <mat-option value="two">Lunch</mat-option>
-      <mat-option value="test">Appetizer</mat-option>
-      <mat-option value="three">Dinner</mat-option>
-      <mat-option value="four">Snacks</mat-option>
+    <mat-select formControlName="meal">
+      <mat-option value="Breakfast">Breakfast</mat-option>
+      <mat-option value="Lunch">Lunch</mat-option>
+      <mat-option value="Appetizer">Appetizer</mat-option>
+      <mat-option value="Dinner">Dinner</mat-option>
+      <mat-option value="Snacks">Snacks</mat-option>
     </mat-select>
   </mat-form-field>
   <mat-form-field>
-    <mat-label>More Information Here</mat-label>
-    <textarea matInput></textarea>
+    <mat-label>Details</mat-label>
+    <textarea matInput formControlName="other"></textarea>
   </mat-form-field>
   <button mat-raised-button color="accent">Save and New</button>
-  <button mat-raised-button color="accent" routerLink="/plan">Save</button>
+  <button mat-raised-button (click)="save()" color="accent">Save</button>
   </div>
 </form>

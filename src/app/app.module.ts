@@ -14,7 +14,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatNativeDateModule} from '@angular/material/core';
 import { PlannerComponent } from './planner/planner.component';
 import {MatSelectModule} from '@angular/material/select';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './account/login/login.component';
 import { SigninMicrosoftComponent } from './account/signin-microsoft/signin-microsoft.component';
 import { SigninGoogleComponent } from './account/signin-google/signin-google.component';
@@ -41,7 +41,7 @@ import { MatTableModule } from '@angular/material/table';
     BrowserAnimationsModule, MatToolbarModule, MatButtonModule, MatIconModule,
     MatMenuModule, MatDatepickerModule, MatFormFieldModule, MatInputModule,
     MatDatepickerModule, MatNativeDateModule, MatSelectModule, FormsModule,
-    MatListModule, MatTableModule
+    MatListModule, MatTableModule, ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
