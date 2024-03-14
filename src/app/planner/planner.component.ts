@@ -10,7 +10,7 @@ import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
 export class PlannerComponent implements OnInit {
   detailForm!: FormGroup;
 
-  constructor(private fb: FormBuilder) { // I usually call this 'fb', but call it what you want
+  constructor(private fb: FormBuilder){
     this.detailForm = this.fb.group({
       day: [''],
       name: [''],
@@ -21,9 +21,11 @@ export class PlannerComponent implements OnInit {
 
   ngOnInit(): void {
     this.detailForm = new FormGroup({
-      day: new FormControl('')
+      day: new FormControl(''),
+      name: new FormControl(''),
+      meal: new FormControl(''),
+      other: new FormControl('')
     })
     throw new Error('Method not implemented.');
   }
-
 }
