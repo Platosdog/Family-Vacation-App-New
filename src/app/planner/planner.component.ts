@@ -28,4 +28,13 @@ export class PlannerComponent implements OnInit {
     })
     throw new Error('Method not implemented.');
   }
+  save() {
+    this.detailForm = new FormGroup({
+      day: new FormControl(''),
+      name: new FormControl(''),
+      meal: new FormControl(''),
+      other: new FormControl('')
+    })
+    throw new Error('Method not implemented.');
+    }
 }
