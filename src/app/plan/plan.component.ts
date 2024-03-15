@@ -1,14 +1,14 @@
 import {Component} from '@angular/core';
 
 export interface PeriodicElement {
-  name: string;
   day: number;
+  name: string;
   meal: string;
   other: string;
 }
 
-const ELEMENT_DATA: PeriodicElement[] = [
-  {day: 1, name: 'J1K1', meal: 'lunch', other: 'cesear chicken wraps'},
+const FormGroup: PeriodicElement[] = [
+  {day: 1, name: 'J1K1', meal: 'lunch', other: 'cesear chicken wraps'}
 ];
 
 @Component({
@@ -18,5 +18,5 @@ const ELEMENT_DATA: PeriodicElement[] = [
 })
 export class PlanComponent {
   displayedColumns: string[] = ['day', 'name', 'meal', 'other'];
-  dataSource = ELEMENT_DATA;
+  dataSource = FormGroup;
 }
