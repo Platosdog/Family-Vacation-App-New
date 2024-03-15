@@ -35,6 +35,6 @@ export class PlannerComponent implements OnInit {
       meal: new FormControl(''),
       other: new FormControl('')
     })
-    throw new Error('Method not implemented.');
+
     }
 }
