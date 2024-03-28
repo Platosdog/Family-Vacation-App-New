@@ -2,15 +2,16 @@
  <div class="textarea">
   <mat-form-field>
     <mat-label>Day</mat-label>
-    <input matInput formControlName="day">
+    <input matInput formControlName="day" day="day">
+    <mat-error>Day Number is required</mat-error>
   </mat-form-field>
   <mat-form-field>
     <mat-label>Who is in charge?</mat-label>
-    <input matInput formControlName="name">
+    <input matInput formControlName="name" name="name">
   </mat-form-field>
   <mat-form-field>
     <mat-label>Meal</mat-label>
-    <mat-select formControlName="meal">
+    <mat-select formControlName="meal" meal="meal">
       <mat-option value="Breakfast">Breakfast</mat-option>
       <mat-option value="Lunch">Lunch</mat-option>
       <mat-option value="Appetizer">Appetizer</mat-option>
@@ -20,7 +21,7 @@
   </mat-form-field>
   <mat-form-field>
     <mat-label>Details</mat-label>
-    <textarea matInput formControlName="other"></textarea>
+    <input matInput formControlName="other" other="other">
   </mat-form-field>
   <button mat-raised-button (click)="save()" color="accent">Save and New</button>
   <button mat-raised-button routerLink="/plan" (click)="save()" color="accent">Save</button>
