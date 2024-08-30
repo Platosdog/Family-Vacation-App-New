@@ -1,4 +1,5 @@
 import {Component} from '@angular/core';
+import { PlannerComponent } from '../planner/planner.component';
 
 export interface PeriodicElement {
   day: number;
